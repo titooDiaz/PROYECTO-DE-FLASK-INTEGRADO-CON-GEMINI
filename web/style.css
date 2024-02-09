@@ -148,11 +148,9 @@ button:hover {
   opacity: 100;
   border: #000 solid 1px;
   display: flex;
+  margin: 10px 10px;
 }
 
 #file-input::file-selector-button{
   display: none;
-}
-#file-input, button{
-  margin: 10px 10px;
 }
