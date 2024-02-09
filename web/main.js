@@ -6,7 +6,7 @@ let output = document.querySelector('.output');
 
 form.onsubmit = async (ev) => {
   ev.preventDefault();
-  output.textContent = 'Generating...';
+  output.textContent = 'Procesando...';
 
   try {
     // Load the image as a base64 string

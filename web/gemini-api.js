@@ -17,9 +17,6 @@ export async function* streamGemini({
   yield* streamResponseChunks(response);
 }
 
-/**
- * A helper that streams text output chunks from a fetch() response.
- */
 async function* streamResponseChunks(response) {
   let buffer = '';
 

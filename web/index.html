@@ -4,37 +4,66 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Baking with Gemini</title>
+  <title>Interpretacion de imagenes con Gemini</title>
   <link rel="stylesheet" href="/style.css">
+  <link rel="shortcut icon" href="./h1.png" type="image/x-icon">
 </head>
 
 <body>
   <main>
-    <h1>Baking with Gemini</h1>
+    <h1>Empresas con Gemini</h1>
     <form>
       <div class="image-picker">
         <label class="image-choice">
-          <input type="radio" checked name="chosen-image" value="/baked_goods_1.jpg">
-          <img src="/baked_goods_1.jpg">
+          <input type="radio" checked name="chosen-image" value="./google.jpg">
+          <img src="./google.jpg">
         </label>
         <label class="image-choice">
-          <input type="radio" name="chosen-image" value="/baked_goods_2.jpg">
-          <img src="/baked_goods_2.jpg">
+          <input type="radio" name="chosen-image" value="./microsoft.png">
+          <img src="./microsoft.png">
         </label>
         <label class="image-choice">
-          <input type="radio" name="chosen-image" value="/baked_goods_3.jpg">
-          <img src="/baked_goods_3.jpg">
+          <input type="radio" name="chosen-image" value="./spotify.png">
+          <img src="./spotify.png">
         </label>
       </div>
+
+      <div class="image-picker">
+        <!--SELECTOR DE IMAGENES-->
+        <label class="image-choice">
+          <input type="radio" name="chosen-image" id="custom-image" value="./seleccionar.png">
+          <input type="file" id="file-input" accept="image/*">
+          <img id="uploaded-image" alt="Seleccionar imagen" src="./seleccionar.png">
+        </label>
+      </div>
+
+      <script>
+          // Manejar cambios en el input de archivo local
+          document.getElementById('file-input').addEventListener('change', function () {
+              var fileInput = this;
+              var customImageRadio = document.getElementById('custom-image');
+              var uploadedImage = document.getElementById('uploaded-image');
+
+              console.log(fileInput.files[0]);
+                if (fileInput.files[0] != "undefined"){
+                customImageRadio.value = URL.createObjectURL(fileInput.files[0]);
+        
+                // Marcar el radio button personalizado como seleccionado
+                customImageRadio.checked = true;
+                uploadedImage.src = customImageRadio.value;
+              }
+          });
+      </script>
+
       <div class="prompt-box">
         <label>
           <input name="prompt" placeholder="Enter instructions here" type="text"
-            value="Provide a recipe for the baked goods in the image">
+            value="Hey! que tal! dame informacion sobre esta empresa">
         </label>
-        <button type="submit">Go</button>
+        <button type="submit">Ir</button>
       </div>
     </form>
-    <p class="output">(Results will appear here)</p>
+    <p class="output">Los resultados estaran aca...</p>
   </main>
 
   <script src="https://unpkg.com/markdown-it@8.4.2/dist/markdown-it.min.js"></script>
