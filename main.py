@@ -4,11 +4,18 @@ import os
 import google.generativeai as genai
 from flask import Flask, jsonify, request, send_file, send_from_directory
 
-# 🔥 FILL THIS OUT FIRST! 🔥
-# 🔥 GET YOUR GEMINI API KEY AT 🔥
-# 🔥 https://makersuite.google.com/app/apikey 🔥
-API_KEY = 'AIzaSyD7XVQSfrFai-RW6SHu7-hzqSddkCo9E08'
+# 👻 FILL THIS OUT FIRST! 👻
+# 👻 GET YOUR GEMINI API KEY AT 👻
+# 👻 https://makersuite.google.com/app/apikey 👻
+# 👻 pip install python-dotenv 👻
 
+import os
+from dotenv import load_dotenv
+
+# Carga las variables de entorno desde el archivo .env
+load_dotenv()
+API_KEY = os.getenv("API_KEY")
+print(API_KEY)
 genai.configure(api_key=API_KEY)
 
 app = Flask(__name__)
