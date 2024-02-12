@@ -64,10 +64,50 @@ Una vez creado el entorno, `activalo` con este comando:
 env/scripts/activate
 ```
 
+<br>
 
+Descarga los paquetes:
 ```
 pip install requirements.txt
 ```
+
+
+
+### 3. Correr el programa
+
+Retrocede una carpeta en tu consola
+
+```
+cd ..
+```
+> [!CAUTION]
+> En esta localizacion crea un archivo llamado `.env`, y dentro pon las siguientes variables de entorno
+> <br>
+> Por ejemplo:
+> <br>
+> API_KEY=Est0000EsUnn3JEMmpl000
+> <br>
+> Puedes conseguir tu propia clave [aqui](https://makersuite.google.com/app/apikey)
+
+<br>
+
+Cuando tengas todos los paquetes instalados y el entorno activado, solo debes correr el archivo `main.py`.
+debera ejecutarse en el puerto 8000 de tu computadora
+<br>
+Para abrir el servidor dale `control + clic` en la url de la consola
+
+#### Aqui tienes un ejemplo de como debe verse:
+Localizacion de tus archivos:
+<br>
+<p align="center">
+  <img width="full" src="./arbol.png" />
+</p>
+
+al correrlo:
+<br>
+<p align="center">
+  <img width="full" src="./correr.png" />
+</p>
 
 </s>
 
