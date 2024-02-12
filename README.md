@@ -17,6 +17,7 @@ Con el respaldo de Flask y la integración con Gemini, el proyecto está diseña
 
 El objetivo fundamental es proporcionar a los desarrolladores una base simple para la construcción de aplicaciones web dinámicas y la capacidad de aprovechar las características únicas de Gemini en un entorno Flask.
 Este diminuto proyecto nos ayduara a comprender conceptos del nuevo proyecto de google gemini!
+<<<<<<< HEAD
 
 <br>
 
@@ -115,3 +116,5 @@ RECUERDA QUE CADA CAMBIO DEBE SER DOCUMENTADO
 Un buen codigo siempre debe tener una buena documentacion
 en caso de errores recuerda agregarlos a las inusualidades del proyecto
 </s>
+=======
+>>>>>>> adcca236dd2ad92142c34deb27c57be6b5cb85db
