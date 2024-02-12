@@ -37,7 +37,7 @@ o puedes  descargarlo como un archivo zip desde GitHub.
 
 puedes usar el sigueinte comando en la terminal o cmd para instalar las dependecias:
 
-> [!CAUTION]
+> [!NOTE]
 > Recuerda que peude ser importante tener un entorno virtual 
 > Para instalar las bibliotecas alli sin la necesidad de instalarlas en tu computadora
 
