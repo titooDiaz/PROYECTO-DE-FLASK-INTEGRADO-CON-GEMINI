@@ -109,12 +109,3 @@ al correrlo:
 <p align="center">
   <img width="full" src="./correr.png" />
 </p>
-
-</s>
-
-RECUERDA QUE CADA CAMBIO DEBE SER DOCUMENTADO
-Un buen codigo siempre debe tener una buena documentacion
-en caso de errores recuerda agregarlos a las inusualidades del proyecto
-</s>
-=======
->>>>>>> adcca236dd2ad92142c34deb27c57be6b5cb85db
