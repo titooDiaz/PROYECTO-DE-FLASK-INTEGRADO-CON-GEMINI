@@ -113,4 +113,6 @@ al correrlo:
 > [!CAUTION]
 > Recuerda tener proyectos gratis en google cloud
 > Apesar de que su API es gratis debes tener espacios en google cloud
-> Aunque no te preocupes, google actualmente ofrece 11 proyectos gratuitos 
+> <br>
+> Aunque no te preocupes, google actualmente ofrece 11 proyectos gratuitos
+> https://cloud.google.com/
